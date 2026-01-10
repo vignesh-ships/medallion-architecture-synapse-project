@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+venv/
+*.pyc
+
+# dbt
+target/
+dbt_packages/
+logs/
+dbt_modules/
+
+# Secrets - CRITICAL!
+*.env
+*secret*
+*password*
+*token*
+*key*
+profiles.yml
+credentials.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Synapse specific
+.synapse/
+*.cache
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+*.temp
