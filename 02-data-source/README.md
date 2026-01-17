@@ -20,6 +20,6 @@ Source system: Azure SQL Database with AdventureWorksLT sample data
 5. SalesLT.SalesOrderDetail (542 rows)
 
 ## Next Steps
-- Bronze layer ingestion via ADF
+- Bronze layer ingestion via Synapse Pipelines
 - Silver layer transformations via Synapse Spark
 - Gold layer star schema via dbt
