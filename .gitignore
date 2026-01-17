@@ -12,6 +12,7 @@ target/
 dbt_packages/
 logs/
 dbt_modules/
+profiles.yml
 
 # Secrets - CRITICAL!
 *.env
@@ -19,7 +20,6 @@ dbt_modules/
 *password*
 *token*
 *key*
-profiles.yml
 credentials.json
 
 # IDE
@@ -41,3 +41,8 @@ Thumbs.db
 # Temp files
 *.tmp
 *.temp
+
+# dbt compiled/run artifacts (generated files)
+06-gold-layer/dbt_gold_synapse/target/
+06-gold-layer/dbt_gold_synapse/dbt_packages/
+06-gold-layer/dbt_gold_synapse/logs/

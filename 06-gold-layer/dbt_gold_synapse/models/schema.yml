@@ -1,0 +1,48 @@
+version: 2
+
+sources:
+  - name: silver_ext
+    description: Silver layer external tables
+    tables:
+      - name: customer
+      - name: product
+      - name: product_category
+      - name: sales_order_header
+      - name: sales_order_detail
+
+models:
+  - name: dim_customer
+    description: Customer dimension with surrogate keys
+    columns:
+      - name: customer_key
+        tests:
+          - unique
+          - not_null
+      - name: customer_business_key
+        tests:
+          - unique
+          - not_null
+          
+  - name: dim_product
+    description: Product dimension with category
+    columns:
+      - name: product_key
+        tests:
+          - unique
+          - not_null
+          
+  - name: dim_date
+    description: Date dimension
+    columns:
+      - name: date_key
+        tests:
+          - unique
+          - not_null
+          
+  - name: fact_sales
+    description: Sales fact table
+    columns:
+      - name: sales_key
+        tests:
+          - unique
+          - not_null
