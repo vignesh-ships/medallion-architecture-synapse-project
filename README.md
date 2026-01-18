@@ -149,6 +149,3 @@ dbt docs serve     # View lineage
 - [Delta Lake](https://delta.io/)
 
 ---
-
-**Project Status:** ✅ Complete  
-**Last Updated:** January 2026
